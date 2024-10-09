@@ -1,10 +1,10 @@
 - Top IPs
-14.0.0.120
+14.0.0.120 - External IP; Threat Actor
 10.0.0.112 - SSH Server & Apache Tomcat/7.0.88
 10.0.0.115 - CyberDefenders - Virtual-Machine - Account: root - OS: Ubuntu
 10.0.0.105 - SMB/File Share Server
 
-- Top Ports
+- Top Ports Used
 8080
 22
 445
