@@ -8,7 +8,6 @@ An accountant at the organization received a phishing email containing a downloa
 
 - **Victim Device**: BEIJING-5CD1-PC (Internal IP: 10.4.10.132)
 - **Compromised User**: Roman McGuire
-- **Timeframe**: 20:37:54 - 21:40:04 UTC
 - **Malicious Domain**: proforma-invoices.com
 - **Malware Identified**: `tkraw_Protected99.exe` (Trojan - HawkEye Keylogger)
 
