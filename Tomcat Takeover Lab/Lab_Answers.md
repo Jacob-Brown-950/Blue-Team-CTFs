@@ -1,6 +1,4 @@
-# Web Server Incident Investigation Lab
-
-This lab focuses on investigating suspicious activities detected on a web server through pcap analysis. The objective is to analyze the network traffic, identify malicious behavior, and understand the steps taken by the attacker. Below are the questions and answers to guide you through the investigation:
+# Here are the answers for lab questions!
 
 ## Questions and Answers
 
