@@ -103,24 +103,3 @@ Below is a summary of the compromised data captured by the malware:
   
 6. **20:37:54 - 21:40:04**
    - Time length of compromise
-
-## Recommendations
-
-1. **Isolate the Compromised Host**:
-   - Disconnect BEIJING-5CD1-PC from the network immediately to prevent further exfiltration.
-
-2. **Scan for Indicators of Compromise (IOCs)**:
-   - Use the identified file hashes, IP addresses, and domain names as IOCs to scan other devices for similar threats.
-
-3. **Reset Credentials**:
-   - Ensure that Roman McGuire and any associated accounts reset their credentials across all platforms.
-
-4. **Implement Email Filtering**:
-   - Improve email filtering mechanisms to detect and quarantine suspicious attachments and links from untrusted domains.
-
-5. **Network Monitoring**:
-   - Monitor outbound network traffic for unusual patterns, particularly traffic involving suspicious domains like **proforma-invoices.com**.
-
----
-
-By following these recommendations, the organization can mitigate the immediate risk posed by this phishing attack and prevent future incidents involving similar tactics.
