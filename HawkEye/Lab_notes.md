@@ -92,17 +92,17 @@ Below is a summary of the compromised data captured by the malware:
 1. **20:37:54 UTC**:
    - User accessed the domain **proforma-invoices.com** and downloaded the file `tkraw_protected00.exe`, which is classified as **HawkEye Keylogger**.
    
-2. **20:50:00 UTC**:
-   - `tkraw_Protected99.exe` was executed on BEIJING-5CD1-PC, initiating outbound connections to **whatismyipaddress.com** for location verification.
+2. **20:38:15 UTC**:
+   - `tkraw_Protected99.exe` was executed on BEIJING-5CD1-PC, initiating outbound connections to **whatismyipaddress.com**.
    
-3. **20:55:00 - 21:00:00 UTC**:
-   - Malware began capturing and exfiltrating credentials and system data.
-   
-4. **21:05:00 UTC**:
+4. **20:38:16 UTC**:
    - Credentials from various web services (e.g., AOL, Bank of America, Outlook) were sent to the email address **sales.del@macwinlogistics.in**.
 
 5. **21:40:04 UTC**:
    - The malicious activity ceased, with the final SMTP communication sent to **23.229.162.69**.
+  
+6. **20:37:54 - 21:40:04**
+   - Time length of compromise
 
 ## Recommendations
 
