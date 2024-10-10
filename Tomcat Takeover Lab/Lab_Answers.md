@@ -1,6 +1,4 @@
-# Here are the answers for lab questions!
-
-## Questions and Answers
+## Here are the Questions and Answers
 
 ### Q1
 Given the suspicious activity detected on the web server, the pcap analysis shows a series of requests across various ports, suggesting a potential scanning behavior. Can you identify the source IP address responsible for initiating these requests on our server?
