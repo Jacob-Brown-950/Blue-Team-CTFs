@@ -1,6 +1,6 @@
 # Apache Tomcat Web Server Compromise - Incident Analysis
 
-## Overview
+## Scenario
 
 Our SOC team detected suspicious activity originating from an external IP address targeting an Apache Tomcat web server within the company's intranet. This investigation leverages the analysis of the captured pcap file, uncovering a series of malicious activities that indicate a successful compromise of the web server. Below is the detailed breakdown of the incident, including IP addresses, ports involved, and attacker methodologies.
 
