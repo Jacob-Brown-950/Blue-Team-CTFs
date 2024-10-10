@@ -1,6 +1,6 @@
 # Incident Analysis: Phishing Campaign Leading to Data Exfiltration
 
-## Overview
+## Scenario
 
 An accountant at the organization received a phishing email containing a download link for an invoice. Shortly after opening the email and accessing the download link, suspicious network traffic was observed. Upon investigation, it was revealed that the downloaded file was malicious and led to data exfiltration. This report details the observed malicious activity, protocols and ports used, and analysis of the compromised information.
 
