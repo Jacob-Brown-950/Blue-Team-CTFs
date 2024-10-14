@@ -3,7 +3,6 @@ In this challenge, you will familiarize yourself with **Sysmon logs** and variou
 
 ## Tools & Setup
 - **Splunk**: I used Splunk to take advantage of its data query language. You can sign up for a free enterprise trial [here](https://www.splunk.com/).
-- **Sysmon**: Installed to monitor Windows events and capture key EventIDs.
 
 ## Investigation Steps
 
