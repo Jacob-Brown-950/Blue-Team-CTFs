@@ -1,5 +1,3 @@
-# HackTheBox Challenge - Unit 42
-
 ## Scenario
 In this challenge, you will familiarize yourself with **Sysmon logs** and various useful EventIDs for identifying and analyzing malicious activities on a Windows system. Inspired by Palo Alto's Unit42 research on an UltraVNC campaign, the challenge guides participants through the initial access stage of the attack. The attackers utilized a backdoored version of UltraVNC to maintain access to systems.
 
