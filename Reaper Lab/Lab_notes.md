@@ -1,5 +1,3 @@
-# Suspicious Logon Investigation - MITM Attack Analysis
-
 ## Scenario
 Our SIEM alerted us to a suspicious logon event that requires immediate investigation. The alert indicated a mismatch between the **IP Address** and the **Source Workstation Name**. We have been provided with a network capture (PCAP file) and event logs from the timeframe surrounding the incident. The objective is to correlate the given evidence and report findings.
 
