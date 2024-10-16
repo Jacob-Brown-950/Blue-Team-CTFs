@@ -10,7 +10,6 @@ During your shift as a tier-2 SOC analyst, you receive an escalation from a tier
 ### **Top IPs Identified**
 | IP Address        | Location       | Description              |
 |-------------------|----------------|--------------------------|
-| 84.239.49.16      | Romania        | Unknown                  |
 | 146.190.21.92     | Netherlands    | C2 Server                |
 | 134.209.197.3     | Netherlands    | Victim                   |
 | 128.199.52.72     | Netherlands    | Second C2 Server         |
