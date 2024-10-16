@@ -5,7 +5,7 @@ By identifying the C2 IP, we can block traffic to and from this IP, helping to c
 
 **Answer:** `146.190.21.92`
 
----
+
 
 ### Q2
 Initial entry points are critical to trace back the attack vector. What is the port number of the service the adversary exploited?
