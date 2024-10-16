@@ -43,3 +43,8 @@ The payload was delivered through a malicious XML file hosted on **`146.190.21.9
         </list>
     </constructor-arg>
 </bean>
+
+## **3. Identification of the Reverse Shell Executable**
+The XML configuration initializes an instance of java.lang.ProcessBuilder, a standard Java class used to execute system commands. The method start() is invoked to execute a shell command (bash -c), which downloads a file named docker from the second C2 server at 128.199.52.72 and saves it in the /tmp directory.
+
+The payload then changes the permissions of the file to make it executable and runs it. This tactic is a typical method used to gain initial access and control over a compromised host.
