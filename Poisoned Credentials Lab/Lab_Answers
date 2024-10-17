@@ -1,0 +1,26 @@
+## Here are the Questions and Answers
+
+### Q1
+In the context of the incident described in the scenario, the attacker initiated their actions by taking advantage of benign network traffic from legitimate machines. Can you identify the specific mistyped query made by the machine with the IP address `192.168.232.162`?
+
+**Answer:** `FILESHAARE`
+
+### Q2
+We are investigating a network security incident. For a thorough investigation, we need to determine the IP address of the rogue machine. What is the IP address of the machine acting as the rogue entity?
+
+**Answer:** `192.168.232.215`
+
+### Q3
+During our investigation, it's crucial to identify all affected machines. What is the IP address of the second machine that received poisoned responses from the rogue machine?
+
+**Answer:** `192.168.232.176`
+
+### Q4
+We suspect that user accounts may have been compromised. To assess this, we must determine the username associated with the compromised account. What is the username of the account that the attacker compromised?
+
+**Answer:** `janesmith`
+
+### Q5
+As part of our investigation, we aim to understand the extent of the attacker's activities. What is the hostname of the machine that the attacker accessed via SMB?
+
+**Answer:** `AccountingPC`
